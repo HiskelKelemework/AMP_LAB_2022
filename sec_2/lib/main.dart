@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sec_2/auth/index.dart';
+import 'package:sec_2/home/screens/home_screen.dart';
 
 void main() {
   runApp(const RecipeApp());
@@ -19,7 +20,7 @@ class RecipeApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: LoginScreen(),
+        home: HomeScreen(),
       ),
     );
   }
