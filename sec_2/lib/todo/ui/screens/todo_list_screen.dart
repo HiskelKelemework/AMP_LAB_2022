@@ -10,6 +10,7 @@ class TodoListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Todos")),
       body: BlocBuilder<TodoBloc, TodoState>(
         buildWhen: (p, c) => c is! UpdateSuccessful,
         builder: (_, TodoState state) {
